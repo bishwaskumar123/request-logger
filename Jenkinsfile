@@ -15,7 +15,7 @@ pipeline {
     stage('Build Image') {
       steps {
       sh "docker build -t bishwaskumar123/request-logger:${env.BUILD_ID} ."
-      sh "docker tag bishwaskumar123/request-logger:${env.BUILD_ID} brainupgrade/request-logger:latest"
+      sh "docker tag bishwaskumar123/request-logger:${env.BUILD_ID} bishwaskumar123/request-logger:latest"
       }
     }
     
